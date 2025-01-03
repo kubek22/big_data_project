@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE airbnb_data_avro (
+CREATE TABLE airbnb_data_avro (
     id INT,
     name STRING,
     host_id INT,
@@ -17,5 +17,5 @@ CREATE EXTERNAL TABLE airbnb_data_avro (
 )
 PARTITIONED BY (neighbourhood_group STRING)
 CLUSTERED BY (price) INTO 10 BUCKETS
-STORED AS AVRO
+STORED AS PARQUET
 LOCATION '/project/airbnb/';

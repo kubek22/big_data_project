@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE air_quality_avro (
+CREATE TABLE air_quality_avro (
     unique_id INT,
     indicator_id INT,
     name STRING,
@@ -13,5 +13,5 @@ CREATE EXTERNAL TABLE air_quality_avro (
 )
 PARTITIONED BY (geo_type_name STRING)
 CLUSTERED BY (geo_place_name) INTO 5 BUCKETS
-STORED AS AVRO
+STORED AS PARQUET
 LOCATION '/project/air_quality/';

@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE property_sales_avro (
+CREATE TABLE property_sales_avro (
     unnamed_0 INT,
     neighborhood STRING,
     building_class_category STRING,
@@ -23,5 +23,5 @@ CREATE EXTERNAL TABLE property_sales_avro (
 )
 PARTITIONED BY (borough INT)
 CLUSTERED BY (neighborhood) INTO 10 BUCKETS
-STORED AS AVRO
+STORED AS PARQUET
 LOCATION '/project/property_sales/';
