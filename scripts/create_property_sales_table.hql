@@ -1,4 +1,4 @@
-CREATE TABLE property_sales_avro (
+CREATE TABLE IF NOT EXISTS property_sales_parquet (
     unnamed_0 INT,
     neighborhood STRING,
     building_class_category STRING,

@@ -1,0 +1,80 @@
+## air_quality
+### m -> measurement
+### g -> geography
+### t -> time
+
+id -> unique_id
+m:indicator_id ??? albo połączyć z kluczem
+m:name
+m:measure
+m:measure_info
+m:data_value
+m:message
+g:geo_type_name
+g:geo_join_id
+g:geo_place:name
+t:time_period
+t:start_date
+
+
+## airbnb
+### r -> room
+### g -> geography
+
+id -> id
+r:name
+r:host_id
+r:host_name
+r:room_type
+r:price
+r:minimum_nights
+r:number_of_reviews
+r:last_review
+r:reviews_per_month
+r:calculated_host_listings_count
+r:availability_365
+g:neighbourhood_group
+g:neighbourhood
+g:latitude
+g:longitude
+
+
+## property_sale
+### p -> property
+### g -> geography
+
+id -> id
+p:building_class_category
+p:tax_class_at_present
+p:building_class_at_present
+p:residential_unit
+p:commercial_units
+p:total_units
+p:land_square_feet
+p:gross_square_feet
+p:year_built
+p:tax_class_at_time_of_sale
+p:building_class_at_time_of_sale
+p:sale_price
+
+g:block
+g:lot
+g:ease_ment ??
+g:borough
+g:neighborhood
+g:address
+g:apartment_number
+g:zip_code
+
+## geo
+### g -> geography
+
+id -> object_id
+g:geom
+g:name
+g:stacked
+g:line1
+g:line2
+g:line3
+g:angle
+g:borough

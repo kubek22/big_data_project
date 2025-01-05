@@ -1,4 +1,4 @@
-CREATE TABLE airbnb_data_avro (
+CREATE TABLE IF NOT EXISTS airbnb_data_parquet (
     id INT,
     name STRING,
     host_id INT,

@@ -43,3 +43,12 @@ sales["BOROUGH"]
 
 for val in sales["BOROUGH"].unique():
     print(len(sales[sales["BOROUGH"] == val]))
+
+###
+
+geo = pd.read_csv("NHoodNameCentroids.csv")
+
+geo.shape
+geo.info()
+geo.nunique()
+

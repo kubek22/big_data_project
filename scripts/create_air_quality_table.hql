@@ -1,4 +1,4 @@
-CREATE TABLE air_quality_avro (
+CREATE TABLE IF NOT EXISTS air_quality_parquet (
     unique_id INT,
     indicator_id INT,
     name STRING,
