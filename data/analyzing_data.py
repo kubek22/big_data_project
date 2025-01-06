@@ -2,7 +2,7 @@ import pandas as pd
 
 ###
 
-airbnb = pd.read_csv("ab_nyc.csv")
+airbnb = pd.read_csv("airbnb/ab_nyc.csv")
 
 airbnb.shape
 airbnb.info()
@@ -16,7 +16,7 @@ for val in airbnb.neighbourhood_group.unique():
 
 ###
 
-air_quality = pd.read_csv("air_quality.csv")
+air_quality = pd.read_csv("air_quality/air_quality.csv")
 
 air_quality.shape
 air_quality.info()
@@ -31,7 +31,7 @@ for val in air_quality["Geo Type Name"].unique():
 
 ###
 
-sales = pd.read_csv("nyc_rolling_sales.csv")
+sales = pd.read_csv("sales/nyc_rolling_sales.csv")
 
 sales.shape
 sales.info()
@@ -46,7 +46,7 @@ for val in sales["BOROUGH"].unique():
 
 ###
 
-geo = pd.read_csv("NHoodNameCentroids.csv")
+geo = pd.read_csv("geo/NHoodNameCentroids.csv")
 
 geo.shape
 geo.info()
