@@ -1,0 +1,20 @@
+1. Move/clone repository to home directory on VM
+2. Open 2 terminals, one for kafka server and the other for main configuration
+3. Run sudo /vagrant/scripts/bootstrap.sh
+4. In Kafka terminal:
+	cd big_data_project/kafka/
+	sudo chmod +x run_kafka_server.sh
+	./run_kafka_server.sh
+5. In the other terminal
+	cd big_data_project/kafka/
+	sudo chmod +x kafka.sh
+	./kafka.sh
+6. cd big_data_project/scripts/
+	sudo chmod +x run_all.sh
+	./run_all.sh
+7. Open http://localhost:9443/nifi/
+	Upload the newest template (New_york_v5.xml) and add it to canvas
+	Enable all controller services
+	Run all processors
+	Wait until the processing is finished (at least any data is saved)
+8. Spark
