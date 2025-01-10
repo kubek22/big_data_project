@@ -1,4 +1,4 @@
-1. Move/clone repository to home directory on VM
+1. Move/clone repository to home/vagrant directory on VM
 2. Open 2 terminals, one for kafka server and the other for main configuration
 3. Run sudo /vagrant/scripts/bootstrap.sh
 4. In Kafka terminal:
