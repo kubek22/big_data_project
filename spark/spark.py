@@ -9,7 +9,6 @@ spark = SparkSession.builder \
     .config("spark.hadoop.fs.webhdfs.impl", "org.apache.hadoop.hdfs.web.WebHDFS") \
     .config("spark.hadoop.fs.defaultFS", "http://localhost:50070") \
     .getOrCreate()
-
 spark.sparkContext.setLogLevel("WARN")
 
 # Define paths
