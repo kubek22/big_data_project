@@ -114,10 +114,10 @@ price_distribution_df.show()
 air_quality_agg_df.show()
 
 # Coalesce the DataFrame to a single partition and then save it to HDFS as a single CSV file
-avg_airbnb_price_df.coalesce(1).write.mode("overwrite").format("csv").save("hdfs://node1/project/output/avg_airbnb_price")
-listing_count_df.coalesce(1).write.mode("overwrite").format("csv").save("hdfs://node1/project/output/listing_count")
-avg_sale_price_df.coalesce(1).write.mode("overwrite").format("csv").save("hdfs://node1/project/output/avg_sale_price")
-price_distribution_df.coalesce(1).write.mode("overwrite").format("csv").save("hdfs://node1/project/output/price_distribution")
-air_quality_agg_df.coalesce(1).write.mode("overwrite").format("csv").save("hdfs://node1/project/output/air_quality_agg")
+avg_airbnb_price_df.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save("hdfs://node1/project/output/avg_airbnb_price")
+listing_count_df.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save("hdfs://node1/project/output/listing_count")
+avg_sale_price_df.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save("hdfs://node1/project/output/avg_sale_price")
+price_distribution_df.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save("hdfs://node1/project/output/price_distribution")
+air_quality_agg_df.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save("hdfs://node1/project/output/air_quality_agg")
 
 spark.stop()
