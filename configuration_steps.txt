@@ -18,3 +18,6 @@
 	Run all processors
 	Wait until the processing is finished (at least any data is saved)
 8. Spark
+	cd big_data_project/spark
+	Run spark-submit --master local[2] spark.py 
+	The results are in hdfs in /project/output/ directory
